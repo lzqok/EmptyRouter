@@ -10,6 +10,8 @@
 		B15FD87124E935FF00C47276 /* EmptyRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15FD86724E935FF00C47276 /* EmptyRouter.framework */; };
 		B15FD87624E935FF00C47276 /* EmptyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FD87524E935FF00C47276 /* EmptyRouterTests.swift */; };
 		B15FD87824E935FF00C47276 /* EmptyRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B15FD86A24E935FF00C47276 /* EmptyRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B15FD88324E9361F00C47276 /* UIViewController+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FD88124E9361F00C47276 /* UIViewController+Router.swift */; };
+		B15FD88424E9361F00C47276 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FD88224E9361F00C47276 /* EmptyRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B15FD87024E935FF00C47276 /* EmptyRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15FD87524E935FF00C47276 /* EmptyRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouterTests.swift; sourceTree = "<group>"; };
 		B15FD87724E935FF00C47276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15FD88124E9361F00C47276 /* UIViewController+Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Router.swift"; sourceTree = "<group>"; };
+		B15FD88224E9361F00C47276 /* EmptyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		B15FD86924E935FF00C47276 /* EmptyRouter */ = {
 			isa = PBXGroup;
 			children = (
+				B15FD88224E9361F00C47276 /* EmptyRouter.swift */,
+				B15FD88124E9361F00C47276 /* UIViewController+Router.swift */,
 				B15FD86A24E935FF00C47276 /* EmptyRouter.h */,
 				B15FD86B24E935FF00C47276 /* Info.plist */,
 			);
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					B15FD86624E935FF00C47276 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					B15FD86F24E935FF00C47276 = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15FD88424E9361F00C47276 /* EmptyRouter.swift in Sources */,
+				B15FD88324E9361F00C47276 /* UIViewController+Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		B15FD87C24E935FF00C47276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S3EPGK8YRJ;
@@ -348,6 +358,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EmptyRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.EmptyRouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +376,7 @@
 		B15FD87D24E935FF00C47276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S3EPGK8YRJ;
@@ -372,6 +385,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EmptyRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +402,7 @@
 		B15FD87F24E935FF00C47276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S3EPGK8YRJ;
 				INFOPLIST_FILE = EmptyRouterTests/Info.plist;
@@ -406,6 +421,7 @@
 		B15FD88024E935FF00C47276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S3EPGK8YRJ;
 				INFOPLIST_FILE = EmptyRouterTests/Info.plist;
